@@ -337,7 +337,7 @@ class HiggsAudioModelClient:
                 **batch,
                 max_new_tokens=self._max_new_tokens,
                 use_cache=True,
-                do_sample=True,
+                do_sample=False if temperature == 0.0 else True,
                 temperature=temperature,
                 top_k=top_k,
                 top_p=top_p,

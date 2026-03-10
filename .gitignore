@@ -196,6 +196,10 @@ torch_compile_debug/
 
 # Out Dir
 result/
+outputs/
+
+# Local inference artifacts
+local_models/
 
 # Ruff
 .ruff_cache/
